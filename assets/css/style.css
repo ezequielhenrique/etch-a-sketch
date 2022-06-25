@@ -8,14 +8,13 @@
     height: 450px;
     border: 2px solid #000;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     gap: 0px;
-}
-
-.container-square {
-    border: 1px solid rgb(75, 74, 74);
 }
 
 .hover {
     background-color: blue;
+}
+
+#squares-label {
+    display: block;
 }

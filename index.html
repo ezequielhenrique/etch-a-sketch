@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/range.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -13,14 +16,20 @@
     </header>
     <main>
         <h1>Etch-a-sketch</h1>
-        <input type="color" value="#000000" id="input-color">
-        <input type="button" value="Clear" id="button-clear">
-        <label for="number-of-squares" id="squares-label">16 x 16</label>
-        <input type="range" name="number-of-squares" id="number-of-squares" min="2" max="72" value="16">
-        <div class="container"></div>
+        <div class="flex-container">
+            <div id="left-container">
+                <input type="color" value="#000000" id="input-color">
+                <input type="button" value="Clear" id="button-clear">
+                <label for="number-of-squares" id="squares-label">16 x 16</label>
+                <input type="range" name="number-of-squares" id="number-of-squares" min="2" max="72" value="16">
+            </div>
+            <div id="right-container">
+                <div class="container"></div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Developed by @ezequielhenrique - 2022</p>
+        <p>Developed by <a href="https://github.com/ezequielhenrique" target="_blank"><i style="font-size:1.2em" class="fa">&#xf09b;</i>ezequielhenrique</a> - 2022</p>
     </footer>
 
     <script src="./assets/js/script.js"></script>

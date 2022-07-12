@@ -1,12 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+:root {
+    --color00: #fff;
+    --color01: #A5A5D1;
+    --color02: #363645;
+    --color04: #696985;
+
+    --font01: 'Pangolin', cursive;
+    --font02: 'Poppins', sans-serif;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    background-color: var(--color01);
+    color: var(--color02);
+    font-family: var(--font02);
+}
+
+h1 {
+    font-family: var(--font01);
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+#left-container {
+    flex: 1;
+    text-align: center;
+}
+
+#right-container {
+    flex: 3;
+}
 .container {
+    background-color: var(--color00);
     width: 450px;
     height: 450px;
-    border: 2px solid #000;
+    border: 2px solid var(--color02);
     display: grid;
     gap: 0px;
 }
@@ -17,4 +58,41 @@
 
 #squares-label {
     display: block;
+}
+
+#input-color {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 90px;
+    height: 40px;
+}
+#input-color::-webkit-color-swatch {
+    border-radius: 10px;
+    border: 2px solid var(--color02);
+}
+
+#button-clear {
+    display: block;
+    margin: 25px auto;
+    padding: 5px 20px;
+    font-family: var(--font02);
+    font-weight: bold;
+    font-size: 1em;
+    background-color: var(--color01);
+    color: var(--color02);
+    border: 2px solid var(--color02);
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--color02);
 }

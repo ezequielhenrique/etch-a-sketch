@@ -2,9 +2,9 @@
 
 :root {
     --color00: #fff;
-    --color01: #A5A5D1;
-    --color02: #363645;
-    --color04: #696985;
+    --color01: #BFBFBF;
+    --color02: #404040;
+    --color04: #8C8C8C;
 
     --font01: 'Pangolin', cursive;
     --font02: 'Poppins', sans-serif;
@@ -72,10 +72,10 @@ h1 {
     border: 2px solid var(--color02);
 }
 
-#button-clear {
+.btn{
     display: block;
-    margin: 25px auto;
-    padding: 5px 20px;
+    margin: 1rem auto;
+    padding: .5rem;
     font-family: var(--font02);
     font-weight: bold;
     font-size: 1em;
@@ -83,10 +83,11 @@ h1 {
     color: var(--color02);
     border: 2px solid var(--color02);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 footer {
-    margin-top: 20px;
+    margin: 2rem 0;
     text-align: center;
     font-weight: bold;
     font-size: 1em;
@@ -95,4 +96,22 @@ footer {
 footer > p > a {
     text-decoration: none;
     color: var(--color02);
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .container {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 300px;
+        height: 300px;
+    }
 }
